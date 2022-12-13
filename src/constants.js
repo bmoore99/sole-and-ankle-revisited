@@ -7,6 +7,7 @@ export const COLORS = {
     700: 'hsl(220deg 5% 40%)',
     900: 'hsl(220deg 3% 20%)',
   },
+  blackTransparent: 'hsl(0deg 0% 0% / 0.5)',
   primary: 'hsl(340deg 65% 47%)',
   secondary: 'hsl(240deg 60% 63%)',
 };
