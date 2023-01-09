@@ -48,7 +48,7 @@ const Overlay = styled(DialogOverlay)`
   left: 0;
   right: 0;
   bottom: 0;
-  background: ${COLORS.blackTransparent};
+  background: var(--color-black-transparent);
   display: none;
 
   @media ${(props) => props.theme.queries.tabletAndDown} {
@@ -65,10 +65,10 @@ const Content = styled(DialogContent)`
   bottom: 0;
   display: flex;
   flex-direction: column;
-  background: ${COLORS.white};
+  background: var(--color-white);
   padding: 32px;
   min-width: 300px;
-  color: ${COLORS.gray[900]};
+  color: var(--color-gray-900);
 `;
 
 const CloseButton = styled(UnstyledButton)`
@@ -91,7 +91,7 @@ const Footer = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 14px;
-  color: ${COLORS.gray[700]};
+  color: var(--color-gray-700);
   font-size: ${14 / 16}rem;
   font-weight: ${WEIGHTS.normal};
 `;
