@@ -29,6 +29,7 @@ const Header = () => {
           <NavLink href="/women">Women</NavLink>
           <NavLink href="/kids">Kids</NavLink>
           <NavLink href="/collections">Collections</NavLink>
+          <NavLink href="/test">Another link</NavLink>
         </Nav>
         <Side>
           <MobileNav>
@@ -57,8 +58,8 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  overflow: auto;
 
   @media ${(props) => props.theme.queries.tabletAndDown} {
     border-top: 4px solid ${COLORS.gray[900]};
@@ -67,7 +68,7 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(1.5rem,  8vw - 4rem, 5rem); // 48px;
   margin: 0px 48px;
 
   @media ${(props) => props.theme.queries.tabletAndDown} {
@@ -97,6 +98,7 @@ const Side = styled.div`
 `;
 
 const NavLink = styled.a`
+  white-space: nowrap;
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
